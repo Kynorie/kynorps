@@ -1,0 +1,53 @@
+:root{--bg:#1c1d21;--card:#26282d;--line:rgba(255,255,255,.08);--g:#2e7d46;--g2:#37925a;--r:12px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#e8e8ea;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}
+.hero{text-align:center;padding:96px 20px 36px}
+h1{margin:0;font-size:clamp(2.6rem,8vw,4rem);line-height:1.1;color:#ffeadb;letter-spacing:-.02em}
+.sub{margin:8px 0 28px;color:rgba(255,255,255,.55)}
+.nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;background:var(--g);color:#fff;border:0;border-radius:var(--r);font:600 1rem system-ui,sans-serif;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--g2)}
+.btn svg{width:1.2em;height:1.2em;flex:none}
+.btn.white{background:#fff;color:#1c1d21}
+.btn.white:hover{background:#e9e9ec}
+.btn.white svg{color:#1a73e8}
+.credit{display:inline-block;margin-top:22px;font-size:.9rem;color:rgba(255,255,255,.45);transition:color .15s}
+.credit:hover{color:rgba(255,255,255,.8)}
+main{max-width:760px;width:100%;margin:0 auto;padding:20px 20px 60px;flex:1}
+main.narrow{max-width:560px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin-bottom:14px}
+.card h2{margin:0 0 6px;font-size:1.15rem;color:#ffeadb}
+.card p{margin:0;color:rgba(255,255,255,.75)}
+.banner{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:var(--r);background:rgba(234,179,8,.09);border:1px solid rgba(234,179,8,.18);color:#d8cf9e}
+.banner svg{width:1.4em;height:1.4em;flex:none}
+.thin{display:flex;width:100%;padding:7px 14px;margin-top:10px;font-size:.95rem}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:20;height:56px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(28,29,33,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transform:translateY(-100%);transition:transform .25s}
+.topbar.show{transform:none}
+.brand{font-weight:700;color:#ffeadb;font-size:1.15rem}
+.topbar nav{display:flex;gap:8px}
+.topbar .btn{padding:6px 12px;font-size:.9rem}
+@media(max-width:560px){.topbar .t{display:none}.topbar .btn{padding:8px 10px}}
+.acc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin-bottom:10px;overflow:hidden}
+.acc>button{width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:none;border:0;color:inherit;font:600 1rem system-ui,sans-serif;text-align:left;cursor:pointer}
+.acc>button::after{content:"";width:8px;height:8px;margin:0 4px 4px 12px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .2s;flex:none}
+.acc.open>button::after{transform:rotate(-135deg);margin-bottom:-2px}
+.panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s}
+.acc.open .panel{grid-template-rows:1fr}
+.panel>div{overflow:hidden}
+.in{padding:0 18px 14px;color:rgba(255,255,255,.78)}
+.in p{margin:0 0 12px}.in p:last-child{margin:0}
+.overlay{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.6);opacity:0;visibility:hidden;transition:opacity .25s,visibility 0s .25s}
+.overlay.show{opacity:1;visibility:visible;transition:opacity .2s}
+.modal{max-width:400px;width:100%;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px;transform:translateY(100vh);transition:transform 0s .25s}
+.overlay.show .modal{transform:none;transition:transform .7s cubic-bezier(.16,1,.3,1)}
+.modal>svg{width:48px;height:48px;color:#e8c547}
+.modal h2{margin:10px 0 6px;color:#ffeadb}
+.modal p{margin:0 0 20px;color:rgba(255,255,255,.7)}
+footer{padding:24px 20px 32px;text-align:center;font-size:.875rem;color:rgba(255,255,255,.45);border-top:1px solid var(--line)}
+footer p{margin:0 0 4px}
+footer a{color:rgba(255,255,255,.6);text-decoration:underline;text-underline-offset:3px;transition:color .15s}
+footer a:hover{color:#fff}
+.card a{color:#ffeadb;text-decoration:underline;text-underline-offset:3px}
+.card ul{margin:8px 0 0;padding-left:20px;color:rgba(255,255,255,.75)}
+.card li{margin-bottom:4px}
