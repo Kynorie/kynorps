@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "rewrites": [{ "source": "/home", "destination": "/" }],
+  "redirects": [
+    { "source": "/discord", "destination": "https://discord.gg/NhknwVEdu5", "permanent": false },
+    { "source": "/gdps/account", "destination": "https://kynorie.ps.fhgdps.com//////accounts/accountManagement.php", "permanent": false },
+    { "source": "/gdps/wine", "destination": "https://www.winehq.org/", "permanent": false },
+    { "source": "/download/mediafire", "destination": "https://www.mediafire.com/file/pt0wt3hrruo91h9/kynorps.zip/file", "permanent": false }
+  ]
+}
