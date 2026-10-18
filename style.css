@@ -11,7 +11,7 @@ h1{margin:0;font-size:clamp(2.6rem,8vw,4rem);line-height:1.1;color:#ffeadb;lette
 .btn svg{width:1.2em;height:1.2em;flex:none}
 .btn.white{background:#fff;color:#1c1d21}
 .btn.white:hover{background:#e9e9ec}
-.btn.white svg{color:#1a73e8}
+.btn.white svg{color:#000}
 .credit{display:inline-block;margin-top:22px;font-size:.9rem;color:rgba(255,255,255,.45);transition:color .15s}
 .credit:hover{color:rgba(255,255,255,.8)}
 main{max-width:760px;width:100%;margin:0 auto;padding:20px 20px 60px;flex:1}
