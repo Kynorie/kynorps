@@ -11,8 +11,10 @@
   <div class="banner"><i data-i="warn"></i><span>Geometry Dash does not have a native Linux port. To run this GDPS, please use Wine.</span></div>
   <a class="btn white thin" href="/download/mediafire"><i data-i="pc"></i>Download for PC</a>
   <a class="btn white thin" href="/download/mediafire/android"><i data-i="android"></i>Download for Android</a>
+  <a class="btn thin" id="launcher" href="/discord"><i data-i="launch"></i>Download Launcher for PC</a>
   <a class="btn thin" href="/gdps/account"><i data-i="acc"></i>KynorPS Account Creation</a>
   <a class="btn thin" id="wine" href="/gdps/wine"><i data-i="wine"></i>Install Wine</a>
+  <button class="btn thin" id="geodeBtn" type="button"><i data-i="geode"></i>Install Geode</button>
   <p class="or">Or... Watch the video tutorial for PC!</p>
   <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/qWzYqmPcVFA" title="KynorPS video tutorial for PC" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 </main>
@@ -24,6 +26,17 @@
     <button class="btn white" id="ok" style="width:100%">Okay.</button>
   </div>
 </div>
+<div class="overlay" id="geode">
+  <div class="modal geode" role="dialog" aria-modal="true" aria-labelledby="gt">
+    <button class="x" id="geodeX" type="button" aria-label="Close"><i data-i="x"></i></button>
+    <h2 id="gt">Install Geode</h2>
+    <h3>Windows Download</h3>
+    <a class="btn white thin" href="https://github.com/geode-sdk/geode/releases/download/v5.11.2/geode-installer-v5.11.2-win.exe"><i data-i="dl2"></i>Download</a>
+    <h3>Linux Download</h3>
+    <div class="cmd"><code id="cmd">curl -o- 'https://geode-sdk.org/install/linux.sh' | bash</code><button id="copy" type="button" aria-label="Copy to clipboard"><i data-i="copy"></i></button></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="/script.js"></script>
 </body>
 </html>
