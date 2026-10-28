@@ -5,7 +5,7 @@
     { "source": "/discord", "destination": "https://discord.gg/NhknwVEdu5", "permanent": false },
     { "source": "/gdps/account", "destination": "https://kynorie.ps.fhgdps.com//////accounts/accountManagement.php", "permanent": false },
     { "source": "/gdps/wine", "destination": "https://www.winehq.org/", "permanent": false },
-    { "source": "/download/mediafire", "destination": "https://www.mediafire.com/file/5gl27vjqa2s5dvv/kynorps_pc.zip/file", "permanent": false },
+    { "source": "/download/mediafire", "destination": "https://www.mediafire.com/file/puh003mglzb34lr/PC_KynorPS.zip/file", "permanent": false },
     { "source": "/download/mediafire/android", "destination": "https://www.mediafire.com/file/k3yfriwe0berjzv/KynorPS-Android-2.2.apk/file", "permanent": false }
   ]
 }
